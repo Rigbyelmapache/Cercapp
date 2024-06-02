@@ -16,21 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function descargarArchivo() {
     // URL del archivo que deseas descargar
-    var archivoURL = 'apk/CercApp.apk'; // Reemplaza esto con la URL de tu archivo
+    var archivoURL = 'apk/CercApp.apk'; 
+    if (esMovil) {
+        // Si es un dispositivo móvil, intentar abrir la URL en una nueva ventana
+        window.open(archivoURL, '_blank');
+    } else {
+        // Crear un elemento de enlace temporal
+        var enlaceDeDescarga = document.createElement('a');
+        enlaceDeDescarga.href = archivoURL;
+        enlaceDeDescarga.download = 'CercApp.apk';
 
-    // Crear un elemento de enlace temporal
-    var enlaceDeDescarga = document.createElement('a');
-    enlaceDeDescarga.href = archivoURL;
+        // Agregar el enlace al documento HTML
+        document.body.appendChild(enlaceDeDescarga);
 
-    // Establecer el nombre del archivo
-    enlaceDeDescarga.download = 'CercApp.apk'; // Puedes cambiar "nombre_del_archivo.pdf" por el nombre que desees
+        // Simular un clic en el enlace
+        enlaceDeDescarga.click();
 
-    // Agregar el enlace al documento HTML
-    document.body.appendChild(enlaceDeDescarga);
-
-    // Simular un clic en el enlace
-    enlaceDeDescarga.click();
-
-    // Eliminar el enlace del documento HTML
-    document.body.removeChild(enlaceDeDescarga);
+        // Eliminar el enlace del documento HTML
+        document.body.removeChild(enlaceDeDescarga);
+    }
 }
