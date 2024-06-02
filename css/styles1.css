@@ -132,14 +132,14 @@ background-position: center center;
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(113, 168, 150) 0px 7px 29px 0px;
 }
-/*button:active {
+button:active {
     letter-spacing: 3px;
     background-color: hsl(261deg 80% 48%);
     color: hsl(0, 0%, 100%);
     box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
-  }*/
+  }
 #programadores .container {
  text-align: center;
  padding: 100px 12px;
