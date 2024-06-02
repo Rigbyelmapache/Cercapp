@@ -126,7 +126,7 @@ background-position: center center;
 /*icono boton */
 
 
-#hero button:hover{
+ button:hover{
     letter-spacing: 3px;
   background-color: hsl(155, 46%, 45%);
   color: hsl(0, 0%, 100%);
