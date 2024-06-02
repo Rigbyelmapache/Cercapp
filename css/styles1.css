@@ -11,9 +11,9 @@ html{
     scroll-behavior: smooth;
 }
 .color-acento{color:rgb(113, 168, 150)}
-h1{ font-size: 3.5em;
+h1{ font-size: 2.5em;
 padding: 1.0em;}
-h2{ font-size: 2.5em;
+h2{ font-size: 1.5em;
 }
 h3{ font-size: 2em;
     padding: 0.5em}
@@ -50,11 +50,10 @@ header {
     
 }
 header p.logo{
-    margin: 0;
-    padding: 25px 10px;
+  padding: 0px;
     font-weight: bold;
     color: rgb(113, 168, 150);
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     align-items: center;
     display: flex;
 }
@@ -95,11 +94,12 @@ header nav{
    
 }
 #hero .container-img{
-    display: flex;
+    display: none;
     justify-content: center;
      
 }
 #hero .container{
+    padding-top: 40px;
     text-align: center;
     font-size: 20px;
     align-items: center;
@@ -155,12 +155,14 @@ button:active {
 #nuestras-aplicaciones{
   background-color: rgb(27, 27, 27);
   color: rgb(255, 255, 255);
-  align-items: center;
-  justify-content: center;
+ 
+
 }
 
 #nuestras-aplicaciones .container{
-   
+    align-items: center;
+    text-align: center;
+ 
     padding: 100px 50px;
 }
 #nuestras-aplicaciones .carta p {
@@ -171,7 +173,7 @@ button:active {
    /* letter-spacing: 1.2em;*/
    margin: 0px;
    padding: 20px;
-   font-size: 3.5em;
+   font-size: 2.5em;
    
 }
 #nuestras-aplicaciones .container h3{
@@ -179,6 +181,9 @@ button:active {
    padding: 10px 30px 30px 0px;
     margin: 0px;
     font-size: 1.7em;
+}
+.programas h3 {
+    display: none;
 }
 .programas .carta:first-child{
  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
@@ -188,7 +193,7 @@ button:active {
  background-position: center center;
  background-size: cover;
  
- padding: 50px 0px 60px 80px;
+ padding: 50px 0px 60px 0px;
  border-radius: 15px;
 
 }
@@ -230,6 +235,7 @@ button:active {
 }
 
 /* media */
+
 
 @media (min-width:720px){
     header {
