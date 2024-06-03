@@ -201,14 +201,14 @@ button:active {
     border-radius: 15px;
     background-blend-mode: overlay;
 }
-.programas .container-cartas:first-child .carta{
+ .container-cartas:first-child .carta{
  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
  rgba(158, 158, 158, 0.5)),
- url("/imagenes/cercapp.jpg");
+ url("../imagenes/cercapp.jpg");
 
 
 }
-.programas .container-cartas:nth-child(2) .carta{
+.container-cartas:nth-child(2) .carta{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
     rgba(165, 159, 159, 0.5)),
     url("../imagenes/carta2.jpeg");
@@ -216,7 +216,7 @@ button:active {
    
   
    }
-   .programas .container-cartas:nth-child(3) .carta{
+ .container-cartas:nth-child(3) .carta{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)),
     url("../imagenes/rockgym.jpg");
