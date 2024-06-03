@@ -211,7 +211,7 @@ button:active {
 .programas .container-cartas:nth-child(2) .carta{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
     rgba(165, 159, 159, 0.5)),
-    url("/imagenes/carta2.jpeg");
+    url("../imagenes/carta2.jpeg");
     
    
   
@@ -219,7 +219,7 @@ button:active {
    .programas .container-cartas:nth-child(3) .carta{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)),
-    url("/imagenes/rockgym.jpg");
+    url("../imagenes/rockgym.jpg");
     
    
    
