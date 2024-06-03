@@ -11,6 +11,10 @@ html{
     scroll-behavior: smooth;
 }
 .color-acento{color:rgb(113, 168, 150)}
+.color-rojo{color: rgb(224, 28, 28);}
+.color-negro{color: white;}
+.color-verde {color: #38c061;}
+
 h1{ font-size: 2.5em;
 padding: 1.0em;}
 h2{ font-size: 1.5em;
@@ -162,9 +166,10 @@ button:active {
 #nuestras-aplicaciones .container{
     align-items: center;
     text-align: center;
- 
+    justify-content: center;
     padding: 100px 50px;
 }
+
 #nuestras-aplicaciones .carta p {
     display: none;
     flex: 1;
@@ -177,46 +182,64 @@ button:active {
    
 }
 #nuestras-aplicaciones .container h3{
-  
-   padding: 10px 30px 30px 0px;
+ 
+   
     margin: 0px;
-    font-size: 1.7em;
+    font-size: 2.0em;
 }
 .programas h3 {
-    display: none;
+    opacity: 0;
+    padding: 20px 0px 0px 0px;
+    
 }
-.programas .carta:first-child{
- background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
- rgba(158, 158, 158, 0.5)),
- url("../imagenes/carta1.jpeg");
- background-repeat: no-repeat;
- background-position: center center;
- background-size: cover;
- 
- padding: 50px 0px 60px 0px;
- border-radius: 15px;
-
-}
-.carta:nth-child(2){
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
-    rgba(165, 159, 159, 0.5)),
-    url("");
+.programas .carta{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    
+    padding: 0px 0px 60px 0px;
+    border-radius: 15px;
+    background-blend-mode: overlay;
+}
+.carta:first-child{
+ background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
+ rgba(158, 158, 158, 0.5)),
+ url("/imagenes/cercapp.jpg");
+
+
+}
+.programas .container-cartas:nth-child(2) .carta{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
+    rgba(165, 159, 159, 0.5)),
+    url("/imagenes/carta2.jpeg");
+    
    
   
    }
-.programas  .carta:nth-child(3){
+   .programas .container-cartas:nth-child(3) .carta{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)),
-    url("");
-    background-repeat: no-repeat;
-    background-position: center center;
+    url("/imagenes/rockgym.jpg");
+    
+   
    
    }
+.programas .carta:hover button {
+    opacity: 0;
+}
+.programas .carta:hover h3 {
+    opacity: 1;
+    
+    
+}
+
+
 .programas .container-cartas {
    padding: 10px;
+   
+}
+.programas .carta a {
+    text-decoration: none;
 }
 .programas  button {
     padding: 10px 40px;
@@ -226,14 +249,74 @@ button:active {
 #caracteristicas .container {
     text-align: center;
     padding: 100px 0px;
+    font-size: 30px;
 }
 #caracteristicas li {
     margin: 16px 0px;
     font-weight: bold ;
-    font-size: 2.0em;
+    font-size: 0.7em;
     padding: 20px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .footer-img img {
+    max-width: 250px;
+    height: auto;
+}
+
+footer .footer-text {
+    text-align: center;
+    display: none;
+}
+
+footer .footer-text h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+footer .red-social a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    opacity: 0;
+}
+
+footer .red-social a:hover {
+    color: #00aced;
+}
+
+footer .copi {
+    text-align: center;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    font-size: 1rem;
+}
 /* media */
 
 
