@@ -258,7 +258,7 @@ button:active {
     padding: 50px 50px;
 }
 #Descripcion .descripcion-cartas{
-    padding: 10px 20px 10px 20px;
+    padding: 30px 40px 30px 40px;
     background-color: rgb(255, 255, 255);
     /*margin: 15px;*/
     border-radius: 90%;
@@ -267,7 +267,7 @@ button:active {
   
 }
 #Descripcion h2 {
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 #Descripcion .cartas .image-descrpcion {
