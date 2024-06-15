@@ -6,6 +6,7 @@
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #F7F4F2;
 }
 html{
     scroll-behavior: smooth;
@@ -161,8 +162,6 @@ button:active {
     padding: 20px;
 }
 
-
-
 #nuestras-aplicaciones{
   background-color: rgb(27, 27, 27);
   color: rgb(255, 255, 255);
@@ -190,8 +189,6 @@ button:active {
  
 }
 #nuestras-aplicaciones .container h3{
- 
-   
     margin: 0px;
     font-size: 2.0em;
 }
@@ -235,19 +232,15 @@ button:active {
    
    
    }
+
 .programas .carta:hover button {
     opacity: 0;
 }
 .programas .carta:hover h3 {
-    opacity: 1;
-    
-    
+    opacity: 1; 
 }
-
-
 .programas .container-cartas {
    padding: 10px;
-   
 }
 .programas .carta a {
     text-decoration: none;
@@ -255,50 +248,49 @@ button:active {
 .programas  button {
     padding: 10px 40px;
 }
+
 /* Descripcion */
 #Descripcion .container {
    
-    justify-content: center;
     align-items: center;
-    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 50px;
 }
 #Descripcion .descripcion-cartas{
-    padding: 20px;
-    background-color: rgb(252, 240, 226);
-    margin: 15px;
-    text-align: center;
-    border-radius: 10%;
- 
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(255, 255, 255);
+    /*margin: 15px;*/
+    border-radius: 90%;
+   /* overflow: hidden;*/
+    justify-content: center;
   
 }
-#Descripcion .image-descrpcion {
+#Descripcion h2 {
+    font-size: 1em;
+}
+
+#Descripcion .cartas .image-descrpcion {
     background-image: 
     url("../imagenes/store.png");
     background-repeat: no-repeat;
-    background-color: white;
+ 
     background-position: center center;
     background-size: 50%;
-   padding: 100px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   border-radius: 50%;
-   margin: 5px;
+    padding: 50px;
+   
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 50%;*/
+  /* margin: 5px;*/
  
     
 }
-  
- #Descripcion .image-descrpcion .forma {
-     
-    width: 50px;
-    height: 50px;
-    background-color: rgb(226, 40, 155);
-    border-radius: 80%;
-    padding: 40px;
+
+ #Descripcion .descripcion-cartas:hover  {   
+    background-color: rgb(192, 241, 190);
     
-    margin-left: 100px;
-   
- 
-   
 }
+
 #Descripcion .programas {
     display: flex;
     flex-wrap: wrap;
@@ -306,6 +298,18 @@ button:active {
     gap: 2em;
     
 }
+#Descripcion  .cartas {
+   
+    justify-items: center;
+    align-items: center;
+   
+  
+}
+ #Descripcion .descripcion-cartas p {
+    display: none;
+    flex: 1;
+}
+
 
 
 /* caracteristicas */
@@ -458,7 +462,43 @@ footer .copi {
        padding: 0px 320px 0px 0px;
        
     }
-  
+    #Descripcion .descripcion-cartas p {
+        
+        margin-bottom: 20px;
+        padding: 0px 0px 140px 0px;
+    }
+    #Descripcion .descripcion-cartas{
+        max-width: 300px; /* Agregado */
+        height: 300px; /* Agregado */
+        display: flex; /* Agregado */
+        flex-direction: column; /* Agregado */
+        align-items: center; /* Agregado */
+        
+    }
+    #Descripcion .image-descrpcion {
+        background-image: 
+        url("../imagenes/store.png");
+        background-repeat: no-repeat;
+        /*background-color: white;*/
+        background-position: center center;
+        background-size: 70%;
+        padding: 60px;
+      /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       border-radius: 50%;*/
+       margin: 5px;
+     
+        
+    }
+    #Descripcion .descripcion-cartas:hover .image-descrpcion,
+#Descripcion .descripcion-cartas:hover h2 {
+    opacity: 0; /* Agregado */
+}
+
+#Descripcion .descripcion-cartas:hover p {
+    display: block; /* Agregado */
+    opacity: 1; /* Agregado */
+}
+    
 }
 
 
