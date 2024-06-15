@@ -267,9 +267,12 @@ button:active {
   
 }
 #Descripcion h2 {
+    padding:0px 0px 20px 0px ;
+    text-align: center;
+}
+#Descripcon .texto h2 {
     font-size: 1.3em;
 }
-
 #Descripcion .cartas .image-descrpcion {
     background-image: 
     url("../imagenes/store.png");
@@ -296,6 +299,7 @@ button:active {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+    padding: 40px;
     
 }
 #Descripcion  .cartas {
@@ -387,163 +391,4 @@ footer .copi {
     margin: 0;
     padding: 0px 0px 0px 0px;
     font-size: 1rem;
-}
-/* media */
-
-
-
-@media (min-width:720px){
-    header {
-        position: fixed;
-        width: 100%;
-        padding: 30px;
-     
-    }
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
-        height: 45px;
-       
-        
-    }
-    header nav {
-        flex-direction: row;
-        align-items: center;
-        padding-bottom:0 ;
-        font-size: 0.5em;
-        padding-right: 20px;
-    }
-    header nav a {
-        display:initial;
-       
-    }
-    #programadores .container {
-           display: flex;
-           text-align: justify;
-           gap: 1em;
-           justify-content: space-evenly;
-           
-    }
-    #programadores .texto{
-        width: 50%;
-        padding: 0px 30px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #programadores .img-container {
-        background-image: url("../imagenes/androdi-estudio.png");
-        background-position: center center;
-        background-size: cover;
-        height: 400px;
-        width: 40%;
-        max-width: 600px;
-      margin: 50px;
-       
-      
-       
-    }
-    #caracteristicas {
-        background-image: url("../imagenes/logo4.png");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 430px) 80px;
-       
-    }
-    #caracteristicas .container {
-        display: flex;
-        text-align: initial;
-     
-      
-        
-    }
-    #caracteristicas .detalles {
-       padding: 0px 320px 0px 0px;
-       
-    }
-    #Descripcion .descripcion-cartas p {
-        
-        margin-bottom: 20px;
-        padding: 0px 0px 140px 0px;
-    }
-    #Descripcion .descripcion-cartas{
-        max-width: 300px; /* Agregado */
-        height: 300px; /* Agregado */
-        display: flex; /* Agregado */
-        flex-direction: column; /* Agregado */
-        align-items: center; /* Agregado */
-        
-    }
-    #Descripcion .image-descrpcion {
-        background-image: 
-        url("../imagenes/store.png");
-        background-repeat: no-repeat;
-        /*background-color: white;*/
-        background-position: center center;
-        background-size: 70%;
-        padding: 60px;
-      /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       border-radius: 50%;*/
-       margin: 5px;
-     
-        
-    }
-    #Descripcion .descripcion-cartas:hover .image-descrpcion,
-#Descripcion .descripcion-cartas:hover h2 {
-    opacity: 0; /* Agregado */
-}
-
-#Descripcion .descripcion-cartas:hover p {
-    display: block; /* Agregado */
-    opacity: 1; /* Agregado */
-}
-    
-}
-
-
-@media (max-width: 300px) {
-    #hero .container-texto h1 {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        padding-bottom:50px ;
-    }
-
-    #hero .boton2 {
-        font-size: 0.8em;
-        padding: 16px 22px;
-    }
-    header nav {
-        padding-bottom: 5px;
-    }
-  header .container {
-    justify-content: space-around;
-  }
-  header p.logo {
-    flex-direction: column; /* Apila la imagen y el texto en una columna */
-    align-items: center;
-    text-align: center;
-  }
-  .footer-img img {
-    max-width: 170px;
-    height: auto;  
-}
-#programadores p {
-    font-size: 1em;
-}
-
-#nuestras-aplicaciones button {
-    font-size: 0.8em;
-    padding: 6px 12px;
-    
-}
-span {
-   display: none; 
-}
-}
-
-@media (min-width:1300px){
-    #caracteristicas{
-        background-position: calc(100vw - 800px) 80px;
-    }
 }
