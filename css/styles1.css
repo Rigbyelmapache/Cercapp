@@ -18,11 +18,13 @@ html{
 h1{ font-size: 2.5em;
 padding: 1.0em;}
 h2{ font-size: 1.5em;
+    word-wrap: break-word; /* Permite el ajuste de palabras largas */
 }
 h3{ font-size: 2em;
     padding: 0.5em}
 p{ font-size: 1.25em;
-    padding: 1.0em}
+    padding: 1.0em;
+    word-wrap: break-word;}
 ul{ list-style: none;}
 
 button{ 
@@ -37,7 +39,8 @@ button{
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s ease;
 }
 li{ font-size: 1.25em;}
@@ -60,6 +63,8 @@ header p.logo{
     font-size: 2.4rem;
     align-items: center;
     display: flex;
+    
+    
 }
 .container p .btn-logo {
     cursor: pointer;
@@ -84,12 +89,13 @@ header .container{
     flex-direction: column;
     align-items: center;
    margin: auto ;
+   align-items: center;
     
 
 }
 header nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding-bottom: 30px;
     padding-left: 50px;
@@ -100,6 +106,7 @@ header nav{
 #hero .container-img{
     display: none;
     justify-content: center;
+    margin-bottom: 20px;
      
 }
 #hero .container{
@@ -168,6 +175,7 @@ button:active {
     text-align: center;
     justify-content: center;
     padding: 100px 50px;
+    
 }
 
 #nuestras-aplicaciones .carta p {
@@ -177,9 +185,9 @@ button:active {
 #nuestras-aplicaciones .container h2 {
    /* letter-spacing: 1.2em;*/
    margin: 0px;
-   padding: 20px;
-   font-size: 2.5em;
-   
+   padding: 0px 0px 20px 0px;
+   font-size: 2em;
+ 
 }
 #nuestras-aplicaciones .container h3{
  
@@ -187,6 +195,8 @@ button:active {
     margin: 0px;
     font-size: 2.0em;
 }
+
+/* programas */
 .programas h3 {
     opacity: 0;
     padding: 20px 0px 0px 0px;
@@ -196,7 +206,8 @@ button:active {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
+    justify-items: center;
+    align-items: center;
     padding: 0px 0px 60px 0px;
     border-radius: 15px;
     background-blend-mode: overlay;
@@ -244,7 +255,59 @@ button:active {
 .programas  button {
     padding: 10px 40px;
 }
+/* Descripcion */
+#Descripcion .container {
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#Descripcion .descripcion-cartas{
+    padding: 20px;
+    background-color: rgb(252, 240, 226);
+    margin: 15px;
+    text-align: center;
+    border-radius: 10%;
+ 
   
+}
+#Descripcion .image-descrpcion {
+    background-image: 
+    url("../imagenes/store.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center center;
+    background-size: 50%;
+   padding: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 50%;
+   margin: 5px;
+ 
+    
+}
+  
+ #Descripcion .image-descrpcion .forma {
+     
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 40, 155);
+    border-radius: 80%;
+    padding: 40px;
+    
+    margin-left: 100px;
+   
+ 
+   
+}
+#Descripcion .programas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    
+}
+
+
 /* caracteristicas */
 #caracteristicas .container {
     text-align: center;
@@ -256,37 +319,41 @@ button:active {
     font-weight: bold ;
     font-size: 0.7em;
     padding: 20px;
+    word-wrap: break-word;
 }
+
+/* footer */
 
 footer {
     background-color: black;
     color: white;
     padding: 20px 0;
+    text-align: center;
+    
 }
 
 footer .container {
     max-width: 1200px;
-    height: 150px;
-    margin: 0 auto;
-    padding: 0 0px;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-footer .row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-footer .footer-img img {
+ .footer-img img {
     max-width: 250px;
     height: auto;
+   
+    
 }
-
+.footer-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
 footer .footer-text {
     text-align: center;
     display: none;
@@ -320,6 +387,7 @@ footer .copi {
 /* media */
 
 
+
 @media (min-width:720px){
     header {
         position: fixed;
@@ -348,18 +416,94 @@ footer .copi {
     #programadores .container {
            display: flex;
            text-align: justify;
-           gap: 10em;
+           gap: 1em;
+           justify-content: space-evenly;
            
+    }
+    #programadores .texto{
+        width: 50%;
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     #programadores .img-container {
         background-image: url("../imagenes/androdi-estudio.png");
         background-position: center center;
         background-size: cover;
-        height: 500px;
-        width: 60em;
+        height: 400px;
+        width: 40%;
+        max-width: 600px;
+      margin: 50px;
        
       
        
     }
-   
+    #caracteristicas {
+        background-image: url("../imagenes/logo4.png");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 430px) 80px;
+       
+    }
+    #caracteristicas .container {
+        display: flex;
+        text-align: initial;
+     
+      
+        
+    }
+    #caracteristicas .detalles {
+       padding: 0px 320px 0px 0px;
+       
+    }
+  
+}
+
+
+@media (max-width: 300px) {
+    #hero .container-texto h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        padding-bottom:50px ;
+    }
+
+    #hero .boton2 {
+        font-size: 0.8em;
+        padding: 16px 22px;
+    }
+    header nav {
+        padding-bottom: 5px;
+    }
+  header .container {
+    justify-content: space-around;
+  }
+  header p.logo {
+    flex-direction: column; /* Apila la imagen y el texto en una columna */
+    align-items: center;
+    text-align: center;
+  }
+  .footer-img img {
+    max-width: 170px;
+    height: auto;  
+}
+#programadores p {
+    font-size: 1em;
+}
+
+#nuestras-aplicaciones button {
+    font-size: 0.8em;
+    padding: 6px 12px;
+    
+}
+span {
+   display: none; 
+}
+}
+
+@media (min-width:1300px){
+    #caracteristicas{
+        background-position: calc(100vw - 800px) 80px;
+    }
 }
