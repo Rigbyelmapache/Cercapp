@@ -73,6 +73,18 @@
     display: flex;
     justify-content: center;
    }
+   #Descripcion  p {
+     display: initial;
+     padding:0 ; 
+   }
+ #Descripcion .texto h2, #Descripcion .texto p {
+    margin: 0;
+    padding: 10px 0; /* Ajusta el espaciado entre los elementos */
+    word-wrap: break-word; /* Asegura que las palabras largas se dividan */
+    word-break: break-word; /* Si hay palabras demasiado largas, se romperán en la siguiente línea */
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho del contenedor */
+}
+
  
    
 

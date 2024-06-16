@@ -6,7 +6,7 @@
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #F7F4F2;
+    background-color: #ffffff;
 }
 html{
     scroll-behavior: smooth;
@@ -273,26 +273,28 @@ button:active {
     }
     #Descripcion  .cartas {
         
-        border-radius: 15px;
-        background-blend-mode: overlay;
-        padding: 40px;
+     
+       
         background-color: rgba(240, 248, 255, 0.685);
         background-position: center center;
     background-size: cover;
-    padding: 50px 50px;
+    padding: 40px 20px;
    max-width: 300px;
    width: 250px;
     border-radius: 15px;
     display: flex; /* Agregado */
-    flex-direction: column; /* Agregado */
-    align-items: center; /* Agregado */
+    flex-direction: column; 
+    align-items:center; 
+    
    
     
     }
+  
     #Descripcion .texto  {
-        padding: 50px 0px 10px 0px;
-       
-        word-wrap: break-word;
+        padding: 20px 0px 0px 0px;
+        width: 100%;
+        height: 100%;
+        
         
     }
     #Descripcion .cartas .image-descrpcion {
@@ -311,11 +313,16 @@ button:active {
 
     
     }
+    .cartas .texto h2 {
+        word-wrap: break-word; /* Asegura que las palabras largas se dividan */
+    }
 
     #Descripcion  p {
-        display: none;
+       display: none;
         flex: 1;
+       
     }
+  
 
 
 
