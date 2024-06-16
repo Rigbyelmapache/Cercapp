@@ -250,6 +250,20 @@ button:active {
 }
 
 /* Descripcion */
+#Descripcion {
+    display: flex;
+    flex-direction: column;
+   
+   
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+       ,url("../imagenes/meme.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+   
+    align-items: center;
+    justify-content: center;
+   background-position: center center;
+}
 #Descripcion .container {
    
     align-items: center;
@@ -259,9 +273,9 @@ button:active {
 }
 #Descripcion .descripcion-cartas{
     padding: 30px 40px 30px 40px;
-    background-color: rgb(255, 255, 255);
-    /*margin: 15px;*/
-    border-radius: 90%;
+    /*background-color: rgb(245, 243, 243);*/
+    margin: 15px;
+   /* border-radius: 90%;*/
    /* overflow: hidden;*/
     justify-content: center;
   
@@ -269,6 +283,7 @@ button:active {
 #Descripcion h2 {
     padding:0px 0px 20px 0px ;
     text-align: center;
+    
 }
 #Descripcon .texto h2 {
     font-size: 1.3em;
@@ -277,22 +292,21 @@ button:active {
     background-image: 
     url("../imagenes/store.png");
     background-repeat: no-repeat;
- 
+     background-color: rgb(255, 255, 255);
     background-position: center center;
     background-size: 50%;
     padding: 50px;
    
-  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   border-radius: 50%;*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 50%;
   /* margin: 5px;*/
  
-    
 }
 
- #Descripcion .descripcion-cartas:hover  {   
+ /*#Descripcion .descripcion-cartas:hover  {   
     background-color: rgb(192, 241, 190);
     
-}
+}*/
 
 #Descripcion .programas {
     display: flex;
@@ -300,6 +314,7 @@ button:active {
     justify-content: center;
     gap: 2em;
     padding: 40px;
+    background-color: rgba(240, 248, 255, 0.685);
     
 }
 #Descripcion  .cartas {
