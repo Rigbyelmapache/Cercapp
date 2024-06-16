@@ -69,38 +69,13 @@
        padding: 0px 320px 0px 0px;
        
     }
-    #Descripcion .descripcion-cartas p {
-        
-        margin-bottom: 20px;
-        padding: 0px 0px 140px 0px;
-    }
-    #Descripcion .descripcion-cartas{
-     
-        
-    }
-    #Descripcion .image-descrpcion {
-        background-image: 
-        url("../imagenes/store.png");
-        background-repeat: no-repeat;
-        /*background-color: white;*/
-        background-position: center center;
-        background-size: 70%;
-        padding: 60px;
-      /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       border-radius: 50%;*/
-       margin: 5px;
-     
-        
-    }
-    #Descripcion .descripcion-cartas:hover .image-descrpcion,
-#Descripcion .descripcion-cartas:hover h2 {
-    opacity: 0; /* Agregado */
-}
+   #Descripcion .programas {
+    display: flex;
+    justify-content: center;
+   }
+ 
+   
 
-#Descripcion .descripcion-cartas:hover p {
-    display: block; /* Agregado */
-    opacity: 1; /* Agregado */
-}
     
 }
 
