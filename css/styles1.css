@@ -154,7 +154,7 @@ button:active {
   }
 #programadores .container {
  text-align: center;
- padding: 100px 12px;
+ padding: 100px 5px;
  font-size: 20px;
  
 }
@@ -269,10 +269,10 @@ button:active {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 50px 50px;
+    padding: 20px 10px 60px 15px;
 }
 #Descripcion .descripcion-cartas{
-    padding: 30px 40px 30px 40px;
+  /*  padding: 30px 40px 30px 40px;*/
     /*background-color: rgb(245, 243, 243);*/
     margin: 15px;
    /* border-radius: 90%;*/
@@ -283,7 +283,7 @@ button:active {
 #Descripcion h2 {
     padding:0px 0px 20px 0px ;
     text-align: center;
-    
+    word-wrap: break-word
 }
 #Descripcon .texto h2 {
     font-size: 1.3em;
@@ -313,7 +313,7 @@ button:active {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
-    padding: 40px;
+    /*padding: 40px;*/
     background-color: rgba(240, 248, 255, 0.685);
     
 }
