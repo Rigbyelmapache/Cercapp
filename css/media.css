@@ -75,11 +75,7 @@
         padding: 0px 0px 140px 0px;
     }
     #Descripcion .descripcion-cartas{
-        max-width: 300px; /* Agregado */
-        height: 300px; /* Agregado */
-        display: flex; /* Agregado */
-        flex-direction: column; /* Agregado */
-        align-items: center; /* Agregado */
+     
         
     }
     #Descripcion .image-descrpcion {

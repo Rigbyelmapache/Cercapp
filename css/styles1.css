@@ -251,17 +251,11 @@ button:active {
 
 /* Descripcion */
 #Descripcion {
-    display: flex;
-    flex-direction: column;
-   
-   
+    
     background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
        ,url("../imagenes/meme.jpg");
     background-repeat:no-repeat ;
     background-size: cover;
-   
-    align-items: center;
-    justify-content: center;
    background-position: center center;
 }
 #Descripcion .container {
@@ -269,24 +263,43 @@ button:active {
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding: 20px 10px 60px 15px;
+    justify-items: center;
+    padding: 100px 10px;
+    display: flex; /* Agregado */
+    flex-direction: column; /* Agregado */
+  
+
 }
+#Descripcion .programas .cartas {
+   /* display: flex;*/
+   /* flex-wrap: wrap;*/
+    justify-items: center;
+    gap: 2em;
+   padding: 40px;
+    background-color: rgba(240, 248, 255, 0.685);
+   /*w max-width: 150px; /* Agregado */
+   /* height: 200px; /* Agregado */
+    align-items: center; /* Agregado */
+    
+    
+    
+}
+
 #Descripcion .descripcion-cartas{
-  /*  padding: 30px 40px 30px 40px;*/
+  padding: 40px 10px 40px 10px;
     /*background-color: rgb(245, 243, 243);*/
-    margin: 15px;
+    /*margin: 15px;*/
    /* border-radius: 90%;*/
    /* overflow: hidden;*/
-    justify-content: center;
-  
+ max-width: 500px;
+    width: 100%;
+
 }
-#Descripcion h2 {
-    padding:40px 10px 40px 10px ;
-    text-align: center;
-    word-wrap: break-word
-}
+
 #Descripcon .texto h2 {
     font-size: 1.3em;
+    word-wrap: break-word;
+    
 }
 #Descripcion .cartas .image-descrpcion {
     background-image: 
@@ -296,34 +309,15 @@ button:active {
     background-position: center center;
     background-size: 50%;
     padding: 50px;
-   
+    max-width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    border-radius: 50%;
   /* margin: 5px;*/
+
+
  
 }
 
- /*#Descripcion .descripcion-cartas:hover  {   
-    background-color: rgb(192, 241, 190);
-    
-}*/
-
-#Descripcion .programas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-    /*padding: 40px;*/
-    background-color: rgba(240, 248, 255, 0.685);
-    
-}
-#Descripcion  .cartas {
-   
-    justify-items: center;
-    align-items: center;
-   
-  
-}
  #Descripcion .descripcion-cartas p {
     display: none;
     flex: 1;
